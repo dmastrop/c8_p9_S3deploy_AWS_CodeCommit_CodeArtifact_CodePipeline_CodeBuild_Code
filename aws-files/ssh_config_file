@@ -2,3 +2,11 @@ Host git-codecommit.*.amazonaws.com
   User APKAXIXFJTQEW2ZCTWED
   IdentityFile ~/.ssh/vpro-codecommit_rsa
 
+
+  #this modified to my setup
+  # it does not matter if this is pushed to the remote repo because the private key below is local.
+  # The user is just the SSH identity  name.
+  Host git-codecommit.*.amazonaws.com
+  User APKA2RXWAMWFQZLAG44R
+  IdentityFile ~/.ssh/vprofile-codecommit_rsa_SSH
+
