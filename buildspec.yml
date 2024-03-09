@@ -19,7 +19,7 @@ phases:
       #corretto11 is basically jdk11
       #java: corretto11
       # corretto 17 or 21 is jdk17. Need jdk17 for sonarcloud plugin
-      java: corretto17
+      java: corretto21
     commands:
     - cp ./settings.xml /root/.m2/settings.xml
     # maven will use this settings.xml file in AWS CodeBuild.
