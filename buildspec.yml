@@ -19,6 +19,8 @@ phases:
       #corretto11 is basically jdk11
       #java: corretto11
       # corretto 17 or 21 is jdk17. 
+      # The project works well with either CodeBuild 5.0 and corretto11 OR CodeBuild7.0 and corretto17
+      # I am currently running CodeBuild7.0 that supports JDK17 for compiling the code.
       java: corretto17
     commands:
     - cp ./settings.xml /root/.m2/settings.xml
@@ -50,6 +52,7 @@ phases:
       # checkstyle code analysis
 
       # Need JDK17 now for sonarqube analysis maven plugin. Otherwise, get build ERROR.
+      # Sonarqube analysis no longer works with JDK11
       # - echo "Installing JDK11 as its a dependency for sonarqube code analysis"
       # - apt-get install -y openjdk-11-jdk
       # - export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
