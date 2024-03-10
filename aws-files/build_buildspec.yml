@@ -5,7 +5,9 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
+      #java: corretto11
+      # try corretto17 with CodeBuild 7.0
+      java: corretto17
     commands:
       - cp ./settings.xml /root/.m2/settings.xml
       # this export command needs to be customized for the CodeArtifact project on AWS. The correct string
