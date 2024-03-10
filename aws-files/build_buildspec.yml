@@ -8,18 +8,24 @@ phases:
       java: corretto11
     commands:
       - cp ./settings.xml /root/.m2/settings.xml
-      - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain ArtifactDomain --domain-owner ID --region REGION --query authorizationToken --output text`
+      # this export command needs to be customized for the CodeArtifact project on AWS. The correct string
+      # is found in the CodeArtifact repository then the View Connection Instructions
+      #- export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain ArtifactDomain --domain-owner ID --region REGION --query authorizationToken --output text`
+      - export CODEARTIFACT_AUTH_TOKEN=`aws codeartifact get-authorization-token --domain dmastrop --domain-owner 725291656587 --region us-east-1 --query authorizationToken --output text`
   pre_build:
     commands:
       - apt-get update
       - apt-get install -y jq 
+      # install maven 3.9
       - wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz
       - tar xzvf apache-maven-3.9.4-bin.tar.gz
       - ln -s apache-maven-3.9.4 maven
   build:
     commands:
+    # this will create the build and we can skip the tests. Those were done with the previous build along with sonarcloud scanning, etc.
       - mvn clean install -DskipTests
 artifacts:
   files:
+  # the *.war fle is created in the target folder after the maven build.
      - target/**/*.war
   discard-paths: yes

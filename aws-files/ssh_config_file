@@ -5,7 +5,9 @@ Host git-codecommit.*.amazonaws.com
 
   #this modified to my setup
   # it does not matter if this is pushed to the remote repo because the private key below is local.
-  # The user is just the SSH identity  name.
+  # The user is just the SSH identity when the public key is added to AWS CodeCommit
+  # This permits local git to communicate with the AWS CodeCommit repository in conjunction with the IAM
+  # user that we create.
   Host git-codecommit.*.amazonaws.com
   User APKA2RXWAMWFQZLAG44R
   IdentityFile ~/.ssh/vprofile-codecommit_rsa_SSH
