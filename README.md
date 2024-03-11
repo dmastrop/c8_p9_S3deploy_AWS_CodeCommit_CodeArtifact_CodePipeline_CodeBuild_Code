@@ -1,5 +1,7 @@
 # Prerequisites
 # test a commit push with the AWS pipeline setup
+# test a commit2 push with AWS pipeline setup. The Quality Gate in SonarCloud is set to fail with a 
+# threshold of >20 bugs in the Overall Code. There are currently 24 bugs in the code.
 #
 - JDK 11 
 - Maven 3 
