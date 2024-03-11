@@ -1,4 +1,5 @@
 # Prerequisites
+# test a commit push with the AWS pipeline setup
 #
 - JDK 11 
 - Maven 3 
