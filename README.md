@@ -4,6 +4,7 @@
 # threshold of >20 bugs in the Overall Code. There are currently 24 bugs in the code.
 # test3
 # test4
+# test5 with second SNS target
 #
 - JDK 11 
 - Maven 3 
