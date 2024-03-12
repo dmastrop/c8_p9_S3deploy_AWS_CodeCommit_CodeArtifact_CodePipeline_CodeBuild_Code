@@ -6,6 +6,7 @@
 # test4
 # test5 with second SNS target
 # test6 fixed code Quality Gate. Code should pass now.
+# test7 after reboot
 #
 - JDK 11 
 - Maven 3 
