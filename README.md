@@ -7,7 +7,7 @@
 # test5 with second SNS target
 # test6 fixed code Quality Gate. Code should pass now.
 # test7 after reboot
-#
+# test8 after adding CodeCommit repo project11 to the project9 IAM user
 - JDK 11 
 - Maven 3 
 - MySQL 8
