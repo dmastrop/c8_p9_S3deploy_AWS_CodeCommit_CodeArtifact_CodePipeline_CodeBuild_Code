@@ -1,5 +1,5 @@
 version: 0.2
-
+# push fresh copy 12/18/24
 # original copy in ./aws-files/sonar_buildspec_ORIGINAL.yml
 env:
   parameter-store:
