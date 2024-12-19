@@ -1,5 +1,6 @@
 version: 0.2
 # push fresh copy 12/18/24
+# push to fail a QG of bugs > 20
 # original copy in ./aws-files/sonar_buildspec_ORIGINAL.yml
 env:
   parameter-store:
