@@ -1,4 +1,5 @@
 version: 0.2
+# triffer AWS pipeline to deploy artifact with a push to CodeSource
 #env: 
   #parameter-store:
     #CODEARTIFACT_AUTH_TOKEN: CODEARTIFACT_AUTH_TOKEN
