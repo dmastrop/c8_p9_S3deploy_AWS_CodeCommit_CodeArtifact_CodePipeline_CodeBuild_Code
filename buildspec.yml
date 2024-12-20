@@ -3,6 +3,7 @@ version: 0.2
 # push to fail2 a QG of bugs > 20 on overall code sonar cloud
 # push to succeed with QG bugs > 100.. Actual bug count is 21
 # original copy in ./aws-files/sonar_buildspec_ORIGINAL.yml
+# test
 env:
   parameter-store:
   # AWS parameter-store is used here.
