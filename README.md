@@ -20,6 +20,8 @@ The project has 2 modes of operation, and push from VSCode on mac to CodeCommit 
 The gitlab self managed instance is on the private DevOps VPS linode ecosystem and requires an AWS Connection configuration from AWS to the gitlab docker instance.
 The traefik reverse proxy on the linode VPS that hosts the gitlab self managed docker instance has to be configured to whitelist the AWS source ip address blocks for us-east-1 where my developer tools CodePipeline and its constituents are configured. Otherewise the AWS connection to gitlab VPS instance fails.
 
+NOTE: the relevant branch here is ci-aws.
+
 
 
 # test8 after adding CodeCommit repo project11 to the project9 IAM user
