@@ -9,7 +9,7 @@ Project9: push from VSCode CodeCommit OR push from VSCode to VPS gitlab pipellin
 Maven is used to build and CodeArtifact used to fetch dependencies from maven repo. pom.xml settings.xml
 The CodeBuilds are integrated into discrete CodePipelines for each option. S3 bucket stage is last stage.
 
-Project9: push from VSCode CodeCommit OR push from VSCode to VPS gitlab pipelline. Option1:uses CodeCommit as source for CodeBuilds Option2:uses VPS gitlab repo as source for CodeBuilds.Maven is used to build.CodeArtifact used to fetch dependencies from maven repo.CodeBuilds are integrated into discrete stages for each CodePipeline type. S3 bucket stage is last stage.
+Project9: push from VSCode to CodeCommit OR push from VSCode to VPS gitlab pipelline. Option1:uses CodeCommit as source for CodeBuilds Option2:uses VPS gitlab repo as source for CodeBuilds.Maven is used to build.CodeArtifact used to fetch dependencies from maven repo.CodeBuilds are integrated into discrete stages for each CodePipeline type. S3 bucket stage is last stage.
 
 This uses CodeCommit, CodeArtifact, CodeBuild, and Code Pipeline to build, sonar cloud test and analyze, then rebuild the artifact .war if passes and deploy to S3 bucket. Maven is used to build and CodeArtifact used to fetch dependencies from maven repo. pom.xml settings.xml
 
