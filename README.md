@@ -23,6 +23,13 @@ The traefik reverse proxy on the linode VPS that hosts the gitlab self managed d
 NOTE: the relevant branch here is ci-aws.
 NOTE: the project on gitlab VPS is called Gitlab_to_CodePipeline_AWS_project9_relay_1
 
+A push from VSCode to CodeCommit will trigger CodePipelinex and a push from VSCode to gitlab will triffer CodePipeliney, both of which do the same thing.
+
+
+
+
+## minor updates:
+
 test8 after adding CodeCommit repo project11 to the project9 IAM user
 test again after removing project11 IAM user and using project9 IAM user for both project9 and 11 after adding ARN of project11 
 
